@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Analytics</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+
+        <div class="header">
+            <div class="header-left">
+                <input class="date" placeholder="01/01/2024"></input>
+            </div>
+            <div class="header-right">
+                <input class="companyName" placeholder="Company Name"></input>
+            </div>
+        </div>
+
+        <aside id="sidebar">
+            <hr>
+            <h1>Box Options</h1>
+            <hr>
+
+            <input class="likes" placeholder="Likes:"></input>
+            <input class="comments" placeholder="Comments:"></input>
+            <hr style="margin-top: 1vw;">
+
+            <h1>Views Options</h1>
+            <hr>
+
+            <div class="inputs">
+                <input class="viewsDay1 inp" type="number" placeholder="Day 1:"></input>
+                <input class="viewsDay2 inp" type="number" placeholder="Day 2:"></input>
+                <input class="viewsDay3 inp" type="number" placeholder="Day 3:"></input>
+                <input class="viewsDay4 inp" type="number" placeholder="Day 4:"></input>
+                <input class="viewsDay5 inp" type="number" placeholder="Day 5:"></input>
+                <input class="viewsDay6 inp" type="number" placeholder="Day 6:"></input>
+                <input class="viewsDay7 inp" type="number" placeholder="Day 7:"></input>
+            </div>
+            <hr style="margin-top: 1.5vw;">
+            <h1>Impresion Options</h1>
+            <hr>
+            <div class="inputs">
+                <input class="impressionsDay1 inp" type="number" placeholder="Day 1:">
+                <input class="impressionsDay2 inp" type="number" placeholder="Day 2:">
+                <input class="impressionsDay3 inp" type="number" placeholder="Day 3:">
+                <input class="impressionsDay4 inp" type="number" placeholder="Day 4:">
+                <input class="impressionsDay5 inp" type="number" placeholder="Day 5:">
+                <input class="impressionsDay6 inp" type="number" placeholder="Day 6:">
+                <input class="impressionsDay7 inp" type="number" placeholder="Day 7:">
+            </div>
+            <hr style="margin-top: 1.5vw;">
+            <button onclick="submit()">Submit Data</button>
+            <button onclick="clearData()">Clear Data</button>
+        </aside>
+
+        <main class="main-container">
+            <div class="main-title">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Views</h3>
+                    </div>
+                    <h1 class="totalViews">---</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Likes</h3>
+                    </div>
+                    <h1 class="totalLikes">---</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Comments</h3>
+                    </div>
+                    <h1 class="totalComments">---</h1>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="charts-card">
+                    <h2 class="chart-title">Impressions</h2>
+                    <div class="area-chart"></div>
+                </div>
+    
+                <div class="charts-card">
+                    <h2 class="chart-title">Total Views</h2>
+                    <div class="pie-chart"></div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
